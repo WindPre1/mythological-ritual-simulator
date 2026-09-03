@@ -1,0 +1,61 @@
+name: RitualPractice
+version: 2.1.22
+main: dev.practice.ritual.RitualPlugin
+api-version: "1.21"
+author: private
+description: Private Mythological Ritual practice sandbox
+
+commands:
+  ritual:
+    description: Practice ritual controls
+    usage: /ritual <start|stop|reset|give|griffin|status|warp>
+  warp:
+    description: Hub warps
+    usage: /warp <name>
+    aliases: [warps, hubwarp, rwarp, sbwarp]
+  hubwarp:
+    description: Hub warp
+    usage: /hubwarp <name>
+  setmagicfind:
+    description: Set Magic Find
+    aliases: [setmf, magicfind, mf]
+  settracking:
+    description: Set Tracking
+    aliases: [settrack, tracking]
+  sethealth:
+    description: Set SkyBlock health
+    aliases: [sethp, hp]
+  setdefense:
+    description: Set SkyBlock defense
+    aliases: [setdef]
+  setmana:
+    description: Set SkyBlock mana
+  setdamage:
+    description: Set damage per hit
+    aliases: [setdmg]
+  trades:
+    description: Open the trades GUI
+    aliases: [trade]
+  items:
+    description: Claim custom items
+    aliases: [item]
+  anvil:
+    description: Fuse Looting onto Daedalus Blade
+  purse:
+    description: Show purse
+  p:
+    description: Party invite/accept/leave
+    aliases: [party]
+  pc:
+    description: Party chat
+    aliases: [pchat, partychat]
+  togglebreak:
+    description: Ops - toggle block breaking
+  togglefakelag:
+    description: Ops - toggle ~18 TPS lag spikes
+  togglechance:
+    description: Toggle rare-drop chance messages
+    aliases: [chancemsg, toggledropchance]
+  compactor:
+    description: Toggle auto-compacting claws and enchanted gold
+    aliases: [autocompactor, togglecompactor]

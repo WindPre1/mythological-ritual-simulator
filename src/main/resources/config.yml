@@ -1,0 +1,81 @@
+world: world
+
+warps:
+  hub:
+    x: 0.5
+    y: 77
+    z: -0.5
+    yaw: -180
+    pitch: 0
+  castle:
+    x: -250.5
+    y: 130
+    z: 45.5
+    yaw: -90
+    pitch: 0
+  wizard:
+    x: 44.5
+    y: 119
+    z: 93.5
+    yaw: 0
+    pitch: 0
+  crypt:
+    x: -160.5
+    y: 62
+    z: -106.5
+    yaw: -60
+    pitch: 0
+  stonks:
+    x: -36.5
+    y: 70
+    z: -81.5
+    yaw: -45
+    pitch: 0
+  da:
+    x: 91.5
+    y: 75
+    z: 173.5
+    yaw: 0
+    pitch: 0
+  museum:
+    x: 29.5
+    y: 72
+    z: 1.5
+    yaw: 0
+    pitch: 0
+  taylor:
+    x: 29.5
+    y: 73
+    z: -41.5
+    yaw: 0
+    pitch: 0
+
+# Hard cap of undug burrows at once (starts + chain). Never more than this.
+# Extra burrows despawn with a chat message until at or under this cap.
+start-burrows: 7
+chain-length: 10
+treasure-chance: 0.33
+close-detect-range: 32
+echo-plings: 12
+sounds: true
+
+# Spawn is locked to SBO HUB_BOUNDS, inset so arrow ray origin (block center) stays inside.
+# x [-282..174], y [61..104], z [-207..204], grass with completely open sky.
+spawn:
+  min-separation: 8
+
+practice-rates: false
+rate-multiplier: 1
+elusive-weight-multiplier: 1.0
+default-griffin: MYTHIC
+magic-find: 390
+tracking: 0
+gaia-hit-chance: 0.333333
+
+regen-seconds: 3
+regen-hearts: 1
+natural-regeneration: false
+
+# Folder of Hypixel mytho skin PNGs / hash .txt files (HUNTER.png, KING.txt, …).
+# Falls back to plugins/RitualPractice/MythoSkins if this path is missing.
+skins-folder: "C:\\Users\\WindPre\\Downloads\\Diana Practice Server\\MythoSkins"
