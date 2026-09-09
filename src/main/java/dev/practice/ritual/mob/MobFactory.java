@@ -353,12 +353,6 @@ public final class MobFactory {
 
     private static final String MYTHOLOGICAL = "§2✿";
 
-    /**
-     * Hypixel uses this with their custom resourcepack to display the actual icon, SBO depends on it to show the mob HP overlay.
-     * We need to embed it so that SBO can detect the nametag, but since we do not have the resourcepack it will show as an ugly missing unicode icon without the pack.
-     */
-    private static final String MYTHOLOGICAL_RESOURCEPACK = "";
-
     private static final String HUMANOID = "§e✰";
     private static final String AQUATIC = "§9⚓";
     private static final String ANIMAL = "§a☮";
@@ -387,7 +381,7 @@ public final class MobFactory {
         else if (kind == MythoKind.MINOTAUR || kind == MythoKind.CHAMPION) {
             type += HUMANOID;
         }
-        String raw = "§8[§7Lv" + levelFor(kind) + "§8] §2" + MYTHOLOGICAL_RESOURCEPACK + type + " §2" + griffin.prefix + " " + kind.display
+        String raw = "§8[§7Lv" + levelFor(kind) + "§8] " + type + " §2" + griffin.prefix + " " + kind.display
                 + " §a" + shown + "§f/§a" + cap + "§c❤" + tag;
         return LegacyComponentSerializer.legacySection().deserialize(raw);
     }
