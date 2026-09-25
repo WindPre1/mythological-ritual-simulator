@@ -121,7 +121,7 @@ public final class RitualPlugin extends JavaPlugin implements Listener {
         } catch (Throwable t) {
             t.printStackTrace();
         }
-        getLogger().info("RitualPractice 2.2.0 enabled.");
+        getLogger().info("RitualPractice 2.3.0 enabled.");
     }
 
     private void bind(String name, CommandExecutor exec, TabCompleter tab) {

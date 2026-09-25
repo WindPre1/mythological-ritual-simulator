@@ -98,11 +98,12 @@ public final class PartyManager implements Listener {
 
     public void chat(Player from, String message) {
         Party p = byPlayer.get(from.getUniqueId());
+        String legacy = "§9Party §8> §b" + from.getName() + "§f: " + message;
         if (p == null) {
-            from.sendMessage("§cYou are not in a party. §e/p <player>");
+            from.sendMessage("§cYou are not in a party, but sending the message anyway to be able to use SBO commands solo. Use the command to party others if needed: §e/p <player>");
+            from.sendMessage(legacy);
             return;
         }
-        String legacy = "§9Party §8> §b" + from.getName() + "§f: " + message;
         for (UUID id : p.members) {
             Player m = Bukkit.getPlayer(id);
             if (m != null && m.isOnline()) m.sendMessage(legacy);

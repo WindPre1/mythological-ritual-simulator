@@ -1,6 +1,6 @@
 name: RitualPractice
-version: 2.2.0
+version: 2.3.0
 main: dev.practice.ritual.RitualPlugin
-api-version: "26.2"
+api-version: "26.3"
 author: WindPre1
 description: Mythological Ritual practice sandbox
